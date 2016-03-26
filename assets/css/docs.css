@@ -1,0 +1,295 @@
+@import url("font-awesome.min.css");
+
+@font-face {
+  font-family: 'Source Sans Pro';font-style:normal;font-weight:300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'),
+  url('../fonts/source-sans-pro-v9-latin-300.woff2') format('woff2'),
+  url('../fonts/source-sans-pro-v9-latin-300.woff') format('woff'),
+  url('../fonts/source-sans-pro-v9-latin-300.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';font-style:italic;font-weight:300;
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'),
+  url('../fonts/source-sans-pro-v9-latin-300italic.woff2') format('woff2'),
+  url('../fonts/source-sans-pro-v9-latin-300italic.woff') format('woff'),
+  url('../fonts/source-sans-pro-v9-latin-300italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';font-style:normal;font-weight:400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
+  url('../fonts/source-sans-pro-v9-latin-regular.woff2') format('woff2'),
+  url('../fonts/source-sans-pro-v9-latin-regular.woff') format('woff'),
+  url('../fonts/source-sans-pro-v9-latin-regular.ttf') format('truetype');
+}
+/*
+CSS3 Styles for the documentation of the photon project (mcphoton.org).
+Copyright ©TheElectronWill
+*/
+
+/* General */
+body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  margin: 0;
+  color: #666;
+}
+.em08 {
+  font-size: 0.8em;
+}
+.hidden {
+  display: none;
+}
+.p25 {
+  width: 25%;
+}
+.p33 {
+  width: 33%;
+}
+.p50 {
+  width: 50%;
+}
+.p66 {
+  width: 66%;
+}
+.p75 {
+  width: 50%;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  color: #555;
+  font-weight: 300;
+  font-family: inherit;
+}
+h1 {
+  text-align: center;
+  font-size: 2.25em;
+  line-height: 1.35em;
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.35em;
+}
+h3 {
+  margin: 0 0 0.6em 0;
+  font-size: 1.35em;
+  line-height: 1.5em;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+h6 {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+.major {
+  margin: 0 0 1em 0;
+  text-align: center;
+}
+.major:after {
+  background: rgba(144, 144, 144, 0.5);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 6em;
+}
+
+/* Links */
+a {
+  border-color: #6bd4c8;
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom-color: transparent;
+  color: #6bd4c8;
+}
+
+/* Header */
+header {
+  margin: 0;
+  overflow: auto;
+}
+header > span {
+  margin: 0.2em 0 0.4em 0.4em;
+  float: left;
+  font-size: 1.5em;
+}
+
+header ul, header ol, footer ul, footer ol {
+  list-style-type: none;
+}
+
+header li, footer li {
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 6em 0 6em 0;
+  line-height: 1.65em;
+  clear: both;
+}
+
+.copyright {
+  font-size: 0.8em;
+  list-style: none;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
+.copyright li {
+  border-left: solid 1px;
+  display: inline-block;
+  line-height: 1em;
+  margin-left: 1em;
+  padding: 0 0 0 1em;
+}
+
+.copyright li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+/* Main */
+main {
+  background-color: #F7F7F7;
+}
+
+/* "Card-grid" lists */
+ul.card-grid, ol.card-grid {
+  list-style: none;
+  border-spacing: 1.5em 0.5em;
+  padding: 0;
+}
+ul.card-grid li, ol.card-grid li {
+  padding: 1.25em;
+  display: table-cell;
+  position: relative;
+  border: 2px solid #F7F7F7;
+  border-radius: 1em;
+  text-align: center;
+}
+ul.card-grid li:hover, ol.card-grid li:hover {
+  border-color: #E7E7E9;
+  background-color: #F7F7F7;
+  transition: 0.2s ease-in-out 0s;
+}
+
+/* Navigation */
+nav a {
+  border-bottom: none;
+}
+nav ul, nav ol {
+  cursor: default;
+  list-style: none;
+}
+.top-nav {
+  float: right;
+  margin: 0.2em 1em 0 0;
+  font-size: 1.3em;
+}
+.top-nav li {
+  padding-left: 0.5em;
+}
+.left-nav {
+  float: left;
+  padding: 0 1em 0 1em;
+  overflow: auto;
+  height: 100%;
+}
+.left-nav ul, .left-nav ol {
+  padding: 0;
+}
+.left-nav ul li ul, .left-nav ol li ol, .left-nav ul li ol, .left-nav ol li ul {
+  padding-left: 1em;
+}
+
+/* Content */
+.content {
+  border-left: 1px solid #E7E7E9;
+  background-color: #FFF;
+  padding: 0 0.8em 2em 0.8em;
+  overflow: auto;
+  height: 100%;
+}
+
+/* Gradients */
+.gradient-header {
+  color: rgba(255,255,255,0.75);
+  background-color: #4686a0;
+  background-attachment: fixed, fixed, fixed;
+  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+}
+
+.gradient-footer {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #4686a0;
+  background-attachment: fixed, fixed,fixed;
+  background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+}
+
+/* Icons */
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.logo {
+  font-weight: 400;
+  color: white;
+}
+.logo img, img.logo {
+  height: auto;
+  width: auto;
+  max-height: 2.1em;
+  max-width: 2.1em;
+}
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1.25em 0 0;
+}
+
+ul.icons li:last-child {
+  padding-right: 0;
+}
+
+ul.icons li .icon:before {
+  font-size: 1.5em;
+}
