@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+This website is based on the theme "Photon" by HTML5 UP (html5up.net | @n33co),
+which is under the CCA 3.0 license (html5up.net/license).
+-->
+<html>
+<head>
+	<title>Photon : API et serveur minecraft multi-coeur</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Logiciel de serveur minecraft indépendant, ouvert, optimisé et vraiment multi-coeur. Les devs peuvent étendre ses fonctionnalités avec des plugins simple à créer." />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 9]><script src="assets/js/ie.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+	<!--[if lte IE 9]>
+	<div class="ie-alert">
+	<span class="icon fa-exclamation-triangle"></span>
+	You're using an old and unsupported browser.<a href="http://browsehappy.com/">Click here to update your browser.</a>
+</div>
+-->
+<!-- Header: menu + logo + title -->
+<div class="gradient-header"><!-- to get the gradient -->
+	<!-- The navigation bar -->
+	<nav id="nav-bar">
+		<ul>
+			<!-- Don't forget the space between the icon and the text! -->
+			<li><a href="https://github.com/MCPhoton/Photon-API"><span class="icon fa-github"></span> <span class="mhide">Github</span></a></li>
+			<li><a href="https://github.com/MCPhoton/Photon-API/wiki"><span class="icon fa-book"></span> <span class="mhide">Wiki</span></a></li>
+			<li><a href="#news"><span class="icon fa-newspaper-o"></span> <span class="mhide">Actualités</span></a></li>
+		</ul>
+	</nav>
+
+	<!-- The logo + the big title -->
+	<section id="header">
+		<div class="inner">
+			<h1>
+				<img class="logo" src="images/logo-yeux-blanc.svg"><br />
+				Voici <strong>Photon</strong>, le logiciel serveur<br />
+				de la nouvelle génération
+			</h1>
+			<ul class="actions">
+				<li><a href="#one" class="button scrolly">Découvrir</a></li>
+			</ul>
+		</div>
+	</section>
+</div>
+
+<!-- One: simple explainations -->
+<section id="one" class="main style1">
+	<div class="container">
+		<header class="major">
+			<h2>Qu'est-ce que Photon et pourquoi en a-t-on besoin ?</h2>
+		</header>
+		<p>Photon est un logiciel de serveur minecraft. C'est un programme qui permet aux gens de jouer ensemble.
+			Il existe déjà des logiciels qui permettent cela: celui de mojang ("serveur vanilla"), and celui de bukkit ("craftbukkit").
+			Mais ils ont plusieurs problèmes:
+			<ol>
+				<li>CraftBukkit est construit sur le code du serveur vanilla, donc <em>il dépend du programme de mojang</em> qui est très difficile à comprendre.</li>
+				<li>CraftBukkit rencontre des <em>problèmes légaux</em>, c'est pourquoi vous ne pouvez plus le télécharger directement comme avant.</li>
+				<li>Ils n'utilisent pas toute la puissance disponible dans les ordinateurs récents: les performances pourraient être meilleures.</li>
+				<li>Ils ne permettent <em>pas</em> aux développeurs de modifier le coeur du jeu (objets, mobs, etc).</li>
+			</ol>
+			Le but de photon est de créer une alternative, palliant tous ces problèmes.
+			Photon doit être rapide, extensible (par des plugins), et indépendant du serveur vanilla.
+			<br />
+			<em>Oui, il y'a des projets communautaires pour minecraft tels que l'API Sponge. Mais Sponge n'a pas le même but que Photon. Sponge ne vise pas à créer un serveur indépendant et multi-coeur.</em>
+		</p>
+	</div>
+</section>
+
+<!-- Two: advantages description -->
+<section id="two" class="main style2">
+	<div class="container">
+		<header class="major">
+			<h2>Les avantages de Photon</h2>
+		</header>
+		<p><h3><span class="icon style1 title fa-unlock"></span>Indépendant</h3>
+			Photon est créé à partir de rien, avec des bibliothèques open-source. Il ne dépend d'aucun code de mojang.
+			De plus, une grande partie de son code source sera disponible sur Github.
+		</p>
+		<p><h3><span class="icon style2 title fa-bolt"></span>Plus rapide que la lumière</h3>
+			Hautement optimisé, sa performance est inégalable: TPS (ticks per second) élevés et basse consommation de RAM.
+		</p>
+		<p><h3><span class="icon style4 title fa-desktop"></span>Multi-coeur</h3>
+			Votre rêve devient réalité: un serveur vraiment multi-coeur qui utilise toute la puissance disponible des ordinateurs modernes.
+		</p>
+		<p><h3><span class="icon style5 title fa-cog"></span>Extensible</h3>
+			Pensé pour être extensible, Photon autorise les développeurs de modifier chaque aspect du jeu.
+			Les plugins peuvent non seulement réagir à des évènements comme une attaque de monstre, mais peuvent
+			aussi ajouter de nouveaux blocs, items, entités, générateurs de mondes et systèmes de permissions.
+			Ils ont même accès aux paquets ! La seule limite est votre imagination.
+		</p>
+	</div>
+</section>
+
+<!-- Three: main links to download, see the wiki, etc. -->
+<section id="three" class="main style1 special">
+	<div class="container">
+		<header class="major">
+			<h2>Photon a besoin de vous !</h2>
+		</header>
+		<p>
+			Photon est actuellement en phase <em>alpha</em>. Toute suggestion, contribution ou quelconque aide est la bienvenue !
+		</p>
+		<!-- in 3 parts -->
+		<div class="row p150"><!--150%-->
+			<div class="6u 12u$(medium)">
+				<span class="icon major fa-book"></span>
+				<h3>Apprenez</h3>
+				<p>Apprenez comment utiliser photon, comment développer des plugins, et comment contribuer au projet.</p>
+				<ul class="actions">
+					<li><button type="button" onclick="location.href='https://github.com/MCPhoton/Photon-API/wiki';">Lire le wiki</button></li>
+				</ul>
+			</div>
+			<div class="6u 12u$(medium)">
+				<span class="icon major fa-github"></span>
+				<h3>Contribuez</h3>
+				<p>Aidez-nous à créer le meilleur serveur minecraft, et la meilleure API ! (Il est recommandé de lire le guide du contributeur sur le Wiki)</p>
+				<ul class="actions">
+					<li><button type="button" onclick="location.href='https://github.com/mcphoton';">Voir le code</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- The news -->
+<section id="news" class="style1 special">
+	<div class="container">
+		<header class="major">
+			<h2><span class="icon title fa-newspaper-o"></span>Actualités</h2>
+		</header>
+		<!-- Slider -->
+		<div id="news-slider">
+			<!-- children's display property modified by javascript -->
+			<div>
+				<h3>26/03/2016 - L'API est désormais en ligne</h3>
+				L'API Photon est disponible <a href="https://github.com/mcphoton/Photon-API">ici</a>.
+				L'API peut changer énormément en peu de temps, donc n'hésitez pas à regarder les actualités régulièrement.
+			</div>
+			<div class="hidden">
+				<h3>Comment allez-vous ?</h3>
+				J'espère que vous allez bien !
+			</div>
+			<div class="hidden">
+				<h3>Ceci n'est pas une information</h3>
+				Oui, il n'y a pas beaucoup d'actualités pour l'instant. Mais c'est normal, le site vient d'être mis en ligne :)
+			</div>
+			<div class="hidden">
+				<h3>...</h3>
+				Ça vous dérangerait d'arrêter d'appuyer sur ce bouton ??
+			</div>
+			<div class="hidden">
+				<h3>Secret</h3>
+				Ah, vous pensez qu'il y'a un secret caché dans ce slider ? Eh bien, vous verrez...
+			</div>
+			<div class="hidden">
+				<h3>Wow !</h3>
+				Vous avez vraiment cliqué 5 fois sur le bouton "suivant" !<br />
+				...<br/ >
+				Ou peut-être avez-vous cliqué 3 fois sur le bouton "précédent".
+			</div>
+			<div class="hidden">
+				<h3>Vous avez du temps à perdre ?</h3>
+				Ne pensez-vous pas qu'il y'a mieux à faire que de lire toutes ces actualités absurdes ?
+			</div>
+			<div class="hidden">
+				<h3>Désolé</h3>
+				Je ne voulais pas faire ça, mais vous m'avez forcé. Si vous cliquez sur le bouton "suivant",
+				vous retournerez à la première actualité.
+			</div>
+		</div>
+		<ul class="actions">
+			<li><a href="javascript:void(0)" onclick="showPrev();"><span class="icon fa-arrow-circle-left"></span></a></li>
+			<li><a href="javascript:void(0)" onclick="showNext();"><span class="icon fa-arrow-circle-right"></span></a></li>
+		</ul>
+	</div>
+</section>
+
+<!-- Footer -->
+<section id="footer">
+	<ul class="icons">
+		<li><a href="https://github.com/mcphoton" class="icon alt fa-github"><span class="label">GitHub de Photon</span></a></li>
+		<li><a href="https://twitter.com/TheElectronWill" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+	</ul>
+	<ul class="copyright">
+		<li>&copy; TheElectronWill 2016</li>
+		<li>Design basé sur : <a href="http://html5up.net">Photon by HTML5 UP</a></li>
+	</ul>
+	<div class="browsers">
+		Site web optimisé pour
+		Firefox <span class="icon fa-firefox"></span>
+		Chrome <span class="icon fa-chrome"></span>
+		et Safari <span class="icon fa-safari"></span>
+	</div>
+</section>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/slider.js"></script>
+</body>
+</html>
