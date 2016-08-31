@@ -1178,6 +1178,9 @@ footer .social a {
         font-size: 20px;
         padding: 0;
     }
+    .carousel-caption .logo-responsive {
+        margin-top: -50%;/* Fix for the logo position on mobile devices */ 
+    }
     .mouse {
         display: none;
     }
